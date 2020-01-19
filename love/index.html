@@ -26,9 +26,17 @@
 
 <body>
     <!-- <audio src="http://music.163.com/song/media/outer/url?id=434902428.mp3" autoplay loop></audio> -->
-   <audio controls autoplay loop>
+   <audio id="audios" autoplay loop >
         <source src="http://music.163.com/song/media/outer/url?id=434902428.mp3" type="audio/mp3" />
     </audio> 
+    <script>
+	document.addEventListener('WeixinJSBridgeReady',function(){
+		document.getElementById('audios').play();	
+	})
+	/*document.addEventListener('touchstart',function(){
+		document.getElementById('audios').play();	
+	})*/
+    </script>
     <div id="main">
         <div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(<a
                 href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a
@@ -36,7 +44,7 @@
         <div id="wrap">
             <div id="text">
                 <div id="code">
-                    <font color="#FF0000"> <span class="say">亲爱的大当家，我爱你，纵然我们相伴很多年了</span><br>
+                    <font color="#FF0000"> <span class="say">亲爱的大当家，我爱你，纵然我们相伴只有短短几年</span><br>
                         <span class="say"> </span><br>
                         <span class="say"> 街边的微风吹过，天上的星星闪烁，</span><br>
                         <span class="say">走在熟悉的街头，想起当年相识的你我，</span><br>
@@ -44,7 +52,8 @@
                         <span class="say">红尘中相恋的你我，一起走过多少花开花落，</span><br>
                         <span class="say">永远爱你的我，对你的爱我从没有变过，</span><br>
                         <span class="say">走过多少春秋多少风雨，已深深藏在我的心窝，</span><br>
-                        <span class="say">虽然你看不见我的告白，但是我还是要把这些心里话说出来</span><br>
+                        <span class="say">三言两语表达不出内心对你的熊岚壮阔波涛汹涌，</span><br>
+	        <span class="say">愿你我能永远面对面相互聆听内心的世界</span><br>
                         <span class="say"> </span><br>
                         <span class="say"><span class="space"></span> -- 爱你的晓林--</span>
                     </font>
@@ -61,9 +70,6 @@
         </div>
 
     </div>
-
-    <script>
-    </script>
 
     <script>
         (function () {
