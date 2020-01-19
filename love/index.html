@@ -32,12 +32,9 @@
         <source src="http://music.163.com/song/media/outer/url?id=434902428.mp3" type="audio/mp3" />
     </audio> 
     <script>
-	document.addEventListener('touchstart',function(){
+	document.addEventListener('WeixinJSBridgeReady',function(){
 		document.getElementById('audios').play();	
 	})
-	/*document.addEventListener('WeixinJSBridgeReady',function(){
-		document.getElementById('audios').play();	
-	})*/
     </script>
     <div id="main">
         <div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(<a
